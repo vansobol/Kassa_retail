@@ -1,0 +1,30 @@
+{
+    "title": "Test run",
+    "execution": {
+        "start_time": 1721765391.165746,
+        "end_time": 1721765391.3307824,
+        "duration": 165,
+        "cumulative_duration": 0
+    },
+    "stats": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "broken": 0,
+        "muted": 0,
+        "total": 0
+    },
+    "results": [],
+    "threads": [],
+    "suites": [],
+    "environment": null,
+    "host_data": {
+        "system": "Windows",
+        "node": "DESKTOP-GH9K78L",
+        "release": "10",
+        "version": "10.0.19045",
+        "machine": "AMD64",
+        "python": "3.10.6.final.0",
+        "pip": "21.3.1"
+    }
+}

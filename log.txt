@@ -1,0 +1,51 @@
+Sending code: 0104865736574906215Sib>qg93dGVz
+Executed command: adb shell input text '0104865736574906215Sib>qg93dGVz'
+Executed command: adb shell input keyevent 66
+Sending code: 0104865736574906215Sib>qg\x1D93dGVz
+Executed command: adb shell input text '0104865736574906215Sib>qg\x1D93dGVz'
+Executed command: adb shell input keyevent 66
+Sending code: 0104865736574906215Sib>qg93dGVz
+Executed command: adb shell input text '0104865736574906215Sib>qg93dGVz'
+Executed command: adb shell input keyevent 66
+Sending code: 0104865736574906215Sib>qg93dGVz
+Executed command: adb shell input text '0104865736574906215Sib>qg93dGVz'
+Executed command: adb shell input keyevent 66
+Sending code: \F0104865736574906215Sib>qg93dGVz
+Executed command: adb shell input text '\F0104865736574906215Sib>qg93dGVz'
+Executed command: adb shell input keyevent 66
+Sending code: 0000004621065422dBtACAAPidGVz
+Executed command: adb shell input text '0000004621065422dBtACAAPidGVz'
+Executed command: adb shell input keyevent 66
+Sending code: 0104865736574906215Sib>qg93dGVz
+Executed command: adb shell input text '0104865736574906215Sib>qg93dGVz'
+Executed command: adb shell input keyevent 66
+Sending code: 0104865736574906215Sib>qg93dGVz
+Executed command: adb shell input text '0104865736574906215Sib>qg93dGVz'
+Executed command: adb shell input keyevent 66
+Sending code: 0104865736574906215Sib>qg93dGVz
+Executed command: adb shell input text '0104865736574906215Sib>qg93dGVz'
+Executed command: adb shell input keyevent 66
+Sending code: 0104865736574906215Sib>qg93dGVz
+Executed command: adb shell input text '0104865736574906215Sib>qg93dGVz'
+Executed command: adb shell input keyevent 66
+Sending code: 0102900318071465215le=TqKMPmRCv9100C092WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA==
+Executed command: adb shell input text '0102900318071465215le=TqKMPmRCv9100C092WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA=='
+Executed command: adb shell input keyevent 66
+Sending code: 0102900318071465215le=TqKMPmRCv9100C092WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA==
+Executed command: adb shell input text '0102900318071465215le=TqKMPmRCv9100C092WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA=='
+Executed command: adb shell input keyevent 66
+Sending code: 0102900318071465215le=TqKMPmRCv9100C092WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA==
+Executed command: adb shell input text '0102900318071465215le=TqKMPmRCv9100C092WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA=='
+Executed command: adb shell input keyevent 66
+Sending code: 0102900318071465215le=TqKMPmRC9100C92WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA==
+Executed command: adb shell input text '0102900318071465215le=TqKMPmRC9100C92WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA=='
+Executed command: adb shell input keyevent 66
+Sending code: 0102900318071465215le=TqKMPmRC9100C92WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA==
+Executed command: adb shell input text '0102900318071465215le=TqKMPmRC9100C92WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA=='
+Executed command: adb shell input keyevent 66
+Sending code: 0102900318071465215le=TqKMPmRC9100C92WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA==
+Executed command: adb shell input text '0102900318071465215le=TqKMPmRC9100C92WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA=='
+Executed command: adb shell input keyevent 66
+Sending code: 0102900318071465215le=TqKMPmRC9100C92WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA==
+Executed command: adb shell input text "0102900318071465215le=TqKMPmRC%1D9100C%1D92WJzo6DEp6t2LNCV69NJjnbrba367jpNqLHTwryIAs5f8f6HoLtEPB7qseawwUSPDtOFHGAHdlT5qTfcJg95fuA=="
+Executed command: adb shell input keyevent 66

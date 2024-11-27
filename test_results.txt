@@ -1,0 +1,17 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.6, pytest-7.4.0, pluggy-1.2.0
+rootdir: C:\Users\Ivan\PycharmProjects\Appium
+configfile: pytest.ini
+plugins: dependency-0.5.1, qase-pytest-5.0.2
+collected 1 item
+
+emulator_connect_test.py .                                               [100%]
+
+============================== warnings summary ===============================
+emulator_connect_test.py::test_emulator[driver_setup30]
+  C:\Users\Ivan\PycharmProjects\Appium\venv\lib\site-packages\appium\webdriver\webdriver.py:245: DeprecationWarning: desired_capabilities argument is deprecated and will be removed in future versions. Use options instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=================== 1 passed, 1 warning in 81.70s (0:01:21) ===================
+Test 'emulator_connect_test.py::test_emulator' PASSED
