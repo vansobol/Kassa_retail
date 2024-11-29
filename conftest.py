@@ -19,8 +19,6 @@ def get_connected_devices():
     return devices
 
 
-# Фикстура для очистки данных приложения на устройстве перед тестом
-
 @pytest.fixture(scope='function', params=get_connected_devices())
 def driver_setup(request):
     udid = request.param

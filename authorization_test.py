@@ -14,7 +14,7 @@ def test_authorization_android(driver_setup):
     driver,udid = driver_setup
     wait = WebDriverWait(driver, 20)
     subprocess.run(['adb','-s',udid, 'shell', 'pm', 'clear', 'com.bifit.cashdesk.mobile'])
-    time.sleep(3)
+    time.sleep(2)
     subprocess.run(['adb', '-s', udid, 'shell', 'am', 'start','com.bifit.cashdesk.mobile/com.bifit.cashdesk.mobile.StartActivity'])
 
     time.sleep(1)
