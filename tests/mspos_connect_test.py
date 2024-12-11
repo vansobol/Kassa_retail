@@ -5,6 +5,7 @@ from appium.webdriver.common.appiumby import AppiumBy
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import TimeoutException
 import time
+import logging
 @pytest.mark.parametrize("driver_setup", ["PE69225N40527"], indirect=True)
 def test_mspos(driver_setup):
 
@@ -48,23 +49,23 @@ def test_mspos(driver_setup):
     except NoSuchElementException:
         error = wait.until(EC.presence_of_element_located((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/textView1')))
         text = error.text
-        print(text)
+        logging.info(text)
     except TimeoutException:
         error = wait.until(EC.presence_of_element_located((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/textView1')))
         text = error.text
-        print(text)
+        logging.info(text)
     except Exception:
-        print('Непредвиденная ошибка')
+        logging.info('Непредвиденная ошибка')
     try:
         side_menu = wait.until(EC.presence_of_element_located((AppiumBy.ACCESSIBILITY_ID, 'Open')))
         side_menu.click()
     except NoSuchElementException:
         error = wait.until(EC.presence_of_element_located((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/textView1')))
         text = error.text
-        print(text)
+        logging.info(text)
     except TimeoutException:
         error = wait.until(EC.presence_of_element_located((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/textView1')))
         text = error.text
-        print(text)
+        logging.info(text)
     except Exception:
-        print('Непредвиденная ошибка')
+        logging.info('Непредвиденная ошибка')

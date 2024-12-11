@@ -1,4 +1,3 @@
-import appium.options.android
 import pytest
 import time
 from appium import webdriver
@@ -8,6 +7,8 @@ from appium.webdriver.common.appiumby import AppiumBy
 from selenium.common.exceptions import NoSuchElementException, InvalidElementStateException, TimeoutException
 from appium.options.android import UiAutomator2Options
 import subprocess
+import logging
+
 appActivity = {
 
 }
@@ -32,6 +33,25 @@ def driver_setup(request):
     driver = webdriver.Remote('http://127.0.0.1:4723', options=options)
     yield driver, udid
     driver.quit()
+
+def pytest_configure():
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s [%(levelname)s] %(message)s',
+        handlers=[
+            logging.StreamHandler(),  # Вывод в консоль
+            logging.FileHandler("test_logs.log", mode='a',encoding='utf-8')  # Запись в файл
+        ]
+    )
+
+@pytest.fixture(scope="session", autouse=True)
+def setup_logging():
+    # Этот фикстур выполняется для всех тестов и настраивает логирование
+    logging.info("Тесты запускаются")
+    yield
+    logging.info("Тесты завершены")
+
 
 # @pytest.fixture()
 # def driver_neva():

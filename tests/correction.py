@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.appiumby import AppiumBy
 from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException, TimeoutException
 import time
+import logging
 
 def test_correction(driver_setup):
     driver, udid = driver_setup
@@ -19,9 +20,9 @@ def test_correction(driver_setup):
         error = WebDriverWait(driver, 2).until(
             EC.presence_of_element_located((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/textView1')))
         text = error.text
-        print(text)
+        logging.info(text)
     except TimeoutException:
-        print("Ошибок оплаты нет. Продолжаем выполнение теста.")
+        logging.info("Ошибок оплаты нет. Продолжаем выполнение теста.")
 
     correction = driver.find_element(AppiumBy.XPATH, "//android.widget.TextView[@text='Коррекция']")
     correction.click()

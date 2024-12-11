@@ -1,0 +1,4 @@
+INFO     root:conftest.py:51 Тесты запускаются
+INFO     root:authorization.py:79 Экраны подключения эмулятора и терминала отсутствуют
+INFO     root:authorization.py:82 Время загрузки торгового объекта (с учетом таймаута): 16 секунд
+INFO     root:conftest.py:53 Тесты завершены

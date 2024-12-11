@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException,StaleElementReferenceException,TimeoutException
 import time
 from selenium.webdriver.common.action_chains import ActionChains
-import os
+import logging
 
 def test_markirovka(driver_setup):
     driver, udid = driver_setup
@@ -19,7 +19,7 @@ def test_markirovka(driver_setup):
         search_close2 = WebDriverWait(driver, 3).until(EC.presence_of_element_located((AppiumBy.ID, 'android:id/search_close_btn')))
         search_close2.click()
     except TimeoutException:
-        print("Элемент 'search_close'  не найден, продолжаем выполнение теста.")
+        logging.info("Элемент 'search_close'  не найден, продолжаем выполнение теста.")
 
     select_item = wait.until(EC.presence_of_element_located((AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().className("android.view.ViewGroup").instance(16)')))
     select_item.click()
@@ -42,14 +42,23 @@ def test_markirovka(driver_setup):
         oism_button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/button_ignore_oism_errors')))
         oism_button.click()
     except TimeoutException:
-        print("окна проверки ЧЗ нет")
+        logging.info("окна проверки ЧЗ нет")
         pass
-    without_change = wait.until(EC.presence_of_element_located((AppiumBy.XPATH, ("//android.widget.Button[@text='Без сдачи']"))))
-    without_change.click()
+    try:
+        without_change = wait.until(EC.presence_of_element_located((AppiumBy.XPATH, ("//android.widget.Button[@text='Без сдачи']"))))
+        without_change.click()
+    except NoSuchElementException:
+        error = wait.until(EC.presence_of_element_located((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/textView1')))
+        text = error.text
+        logging.info(text)
+    except TimeoutException:
+        error = wait.until(EC.presence_of_element_located((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/textView1')))
+        text = error.text
+        logging.info(text)
     sno = wait.until(EC.presence_of_element_located((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/text_input_tax_system')))
     sno.click()
     sno_select = wait.until(EC.visibility_of_element_located((AppiumBy.XPATH, '//android.widget.ListView/android.widget.LinearLayout[1]')))
     sno_select.click()
-    # button_pay = driver.find_element(AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/button_pay')
-    # button_pay.click()
+    button_pay = driver.find_element(AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/button_pay')
+    button_pay.click()
 
