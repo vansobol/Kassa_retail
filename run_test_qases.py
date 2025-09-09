@@ -1,11 +1,13 @@
 import pytest
-
+import subprocess
 # Список тестов для запуска
 tests = [
-    "emulator_connect_test.py",
-    "sale_and_return_test.py",
-    "correction.py",
-    "markirovka_test.py"
+    "tests/authorization_test.py",
+    "tests/emulator_connect_test.py"
+    "tests/sale_and_return_test.py",
+    "tests/correction.py",
+    "tests/markirovka_test.py",
+    "tests/reauthorization_test.py"
 ]
 
 for test in tests:
@@ -19,7 +21,7 @@ for test in tests:
         print(f"Тест {test} успешно выполнен.")
     else:
         print(f"Тест {test} завершился с ошибкой.")
-# Запуск первого теста
+# #Запуск первого теста
 # subprocess.call(["pytest", "-s", "authorization_test.py::test_authorization_android"])
 # # Запуск второго теста
 # subprocess.call(["pytest", "-s", "emulator_connect_test.py::test_emulator"])

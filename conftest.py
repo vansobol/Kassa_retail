@@ -48,9 +48,9 @@ def pytest_configure():
 @pytest.fixture(scope="session", autouse=True)
 def setup_logging():
     # Этот фикстур выполняется для всех тестов и настраивает логирование
-    logging.info("Тесты запускаются")
+    logging.info("tests start")
     yield
-    logging.info("Тесты завершены")
+    logging.info("tests end")
 
 
 # @pytest.fixture()

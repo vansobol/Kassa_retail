@@ -3,6 +3,7 @@ from selenium.common.exceptions import TimeoutException
 import time
 import logging
 from driver_helper import WebDriverHelper
+from appium.webdriver.common.touch_action import TouchAction
 
 class Authorization:
     def __init__(self, driver):
@@ -25,6 +26,11 @@ class Authorization:
 
         except TimeoutException:
             logging.info("Кнопка permission_allow_button не найдена. Продолжаем выполнение теста.")
+        try:
+            allow_button_alt2 = self.helper.short_wait_present((AppiumBy.ID, 'com.android.permissioncontroller:id/permission_allow_button'))
+            allow_button_alt2.click()
+        except  TimeoutException:
+            logging.info("Кнопка permission_allow_button2 не найдена. Продолжаем выполнение теста.")
 
     def login(self, username, password):
         login_field = self.helper.wait_present((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/phone_input'))
@@ -80,5 +86,20 @@ class Authorization:
             end_time = time.time()
             elapsed_time = end_time - start_time - timeout_duration  # Вычитаем время ожидания таймаута
             logging.info(f"Время загрузки торгового объекта (с учетом таймаута): {elapsed_time:.0f} секунд")
+
+    # def swipe_up(self, duration=800):
+    #     w, h = self.driver.get_window_size().values()
+    #     TouchAction(self.driver).press(x=w // 2, y=int(h * 0.8)) \
+    #         .wait(ms=duration) \
+    #         .move_to(x=w // 2, y=int(h * 0.2)) \
+    #         .release() \
+    #         .perform()
+    #
+    def close_banner(self):
+        try:
+            close_btn = self.helper.wait_present((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/closeBtn'))
+            close_btn.click()
+        except TimeoutException:
+            logging.info("Уведомлений не обнаружено")
 
 

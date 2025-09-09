@@ -8,7 +8,7 @@ class add_kkt:
         self.helper = WebDriverHelper(driver)
 
     def add_kkt(self):
-        side_menu = self.helper.short_wait_present((AppiumBy.XPATH, "//android.view.ViewGroup/android.widget.ImageButton"))
+        side_menu = self.helper.wait_present((AppiumBy.XPATH, "//android.view.ViewGroup/android.widget.ImageButton"))
         side_menu.click()
         time.sleep(1)
         self.driver.swipe(100, 2000, 100, 600, duration=1500)

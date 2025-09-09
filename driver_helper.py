@@ -6,6 +6,7 @@ class WebDriverHelper:
         self.driver = driver
         self.wait = WebDriverWait(driver, 15)
         self.short_wait = WebDriverWait(driver, 2)
+        self.middle_wait = WebDriverWait(driver, 4)
 
     def wait_present(self, locator):
         return self.wait.until(EC.presence_of_element_located(locator))
@@ -27,3 +28,6 @@ class WebDriverHelper:
 
     def short_wait_visible(self, locator):
         return self.short_wait.until(EC.visibility_of_element_located(locator))
+
+    def middle_wait_present(self, locator):
+        return self.middle_wait.until(EC.presence_of_element_located(locator))
