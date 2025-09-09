@@ -1,0 +1,74 @@
+# Байт-код Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальные окружения
+.venv/
+venv/
+ENV/
+env/
+.ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Логи
+*.log
+
+# Настройки
+settings.py
+
+# Временные файлы
+*.tmp
+*.temp
+
+# Конфигурационные файлы
+.config
+.secret
+.env
+.env.local
+.env.*.local
+
+# Тесты
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Дистрибутивы
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Django (если используется)
+*.sqlite3
+media/
+staticfiles/
+mediafiles/
+
+# Flask (если используется)
+instance/
+.webassets-cache
+
+# Poetry
+.poetry/
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+# Дополнительные игнорируемые файлы
+*.egg
+*.egg-info
+MANIFEST
+.sphinx-build
+docs/_build/
