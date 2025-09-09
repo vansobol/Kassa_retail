@@ -9,7 +9,6 @@ from selenium.common.exceptions import TimeoutException
 import time
 from selenium.webdriver.common.action_chains import ActionChains
 from appium.webdriver.common.touch_action import TouchAction
-import qrcode
 import base64
 import os
 

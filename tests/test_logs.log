@@ -114,3 +114,278 @@
 2024-12-12 01:42:48,948 [INFO] Экраны подключения эмулятора и терминала отсутствуют
 2024-12-12 01:42:48,949 [INFO] Время загрузки торгового объекта (с учетом таймаута): 16 секунд
 2024-12-12 01:42:49,065 [INFO] Тесты завершены
+2025-05-12 00:22:55,700 [INFO] Тесты запускаются
+2025-05-12 00:22:57,743 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000187FC5EAF50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session
+2025-05-12 00:22:59,777 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000187FC5EA590>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session
+2025-05-12 00:23:01,814 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000187FC5EA380>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session
+2025-05-12 00:23:04,231 [INFO] Тесты завершены
+2025-05-12 00:23:28,396 [INFO] Тесты запускаются
+2025-05-12 00:23:36,645 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 00:23:54,884 [INFO] Тесты завершены
+2025-05-12 00:26:28,222 [INFO] Тесты запускаются
+2025-05-12 00:26:36,068 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 00:26:48,453 [INFO] окна проверки ЧЗ нет
+2025-05-12 00:27:19,701 [INFO] Тесты завершены
+2025-05-12 00:34:41,436 [INFO] Тесты запускаются
+2025-05-12 00:34:48,604 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 00:35:00,343 [INFO] окна проверки ЧЗ нет
+2025-05-12 00:35:31,317 [INFO] Тесты завершены
+2025-05-12 00:39:31,437 [INFO] Тесты запускаются
+2025-05-12 00:39:37,938 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 00:39:49,744 [INFO] Окна проверки ЧЗ нет: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Ivan\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-05-12 00:40:21,409 [INFO] Тесты завершены
+2025-05-12 00:41:33,620 [INFO] Тесты запускаются
+2025-05-12 00:41:41,250 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 00:41:52,904 [INFO] Окна проверки ЧЗ нет: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Ivan\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-05-12 00:42:24,708 [INFO] Тесты завершены
+2025-05-12 00:45:22,015 [INFO] Тесты запускаются
+2025-05-12 00:45:25,867 [INFO] Тесты завершены
+2025-05-12 00:49:50,131 [INFO] Тесты запускаются
+2025-05-12 00:49:55,098 [INFO] Тесты завершены
+2025-05-12 00:50:46,523 [INFO] Тесты запускаются
+2025-05-12 00:50:50,390 [INFO] Тесты завершены
+2025-05-12 00:55:27,893 [INFO] Тесты запускаются
+2025-05-12 00:55:34,331 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 00:55:45,508 [INFO] Окна проверки ЧЗ нет: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Ivan\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-05-12 00:56:19,758 [INFO] Тесты завершены
+2025-05-12 00:57:14,084 [INFO] Тесты запускаются
+2025-05-12 00:57:20,388 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 00:57:32,156 [INFO] Окна проверки ЧЗ нет: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Ivan\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-05-12 00:58:05,908 [INFO] Тесты завершены
+2025-05-12 01:00:01,713 [INFO] Тесты запускаются
+2025-05-12 01:00:08,192 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:00:20,025 [INFO] Окна проверки ЧЗ нет: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Ivan\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-05-12 01:00:54,416 [INFO] Тесты завершены
+2025-05-12 01:02:19,820 [INFO] Тесты запускаются
+2025-05-12 01:02:26,267 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:02:37,729 [INFO] Окна проверки ЧЗ нет: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Ivan\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-05-12 01:02:42,874 [INFO] Кнопка удаления невалидных данных не найдена: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Ivan\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-05-12 01:03:13,612 [INFO] Тесты завершены
+2025-05-12 01:05:24,072 [INFO] Тесты запускаются
+2025-05-12 01:05:31,625 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:05:43,110 [INFO] Окна проверки ЧЗ нет: Message: 
+
+2025-05-12 01:05:48,353 [INFO] Кнопка удаления невалидных данных не найдена: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Ivan\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\Ivan\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-05-12 01:06:03,632 [INFO] [ОШИБКА]: ЛМ ЧЗ. Локальный модуль не инициализирован. Перезапустите приложение
+2025-05-12 01:06:19,265 [INFO] Тесты завершены
+2025-05-12 01:14:57,803 [INFO] Тесты запускаются
+2025-05-12 01:15:05,067 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:15:13,366 [INFO] Всплывающее окно не появилось
+2025-05-12 01:15:33,504 [INFO] [ОШИБКА]: ЛМ ЧЗ. Локальный модуль не инициализирован. Перезапустите приложение
+2025-05-12 01:15:48,976 [INFO] Тесты завершены
+2025-05-12 01:18:25,302 [INFO] Тесты запускаются
+2025-05-12 01:18:29,261 [INFO] Тесты завершены
+2025-05-12 01:21:32,577 [INFO] Тесты запускаются
+2025-05-12 01:21:38,923 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:21:47,329 [INFO] Всплывающее окно не появилось после клика на 'total'
+2025-05-12 01:21:53,334 [INFO] Кнопка продолжения нажата
+2025-05-12 01:22:08,870 [INFO] Сообщение об ошибке: [ОШИБКА]: ЛМ ЧЗ. Локальный модуль не инициализирован. Перезапустите приложение
+2025-05-12 01:22:18,028 [INFO] Тесты завершены
+2025-05-12 01:22:22,110 [INFO] Тесты запускаются
+2025-05-12 01:22:28,970 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:22:42,225 [INFO] Закрыто всплывающее окно после клика на 'total'
+2025-05-12 01:22:47,296 [INFO] Кнопка продолжения нажата
+2025-05-12 01:22:48,387 [INFO] Кнопка 'Без сдачи' нажата
+2025-05-12 01:22:51,090 [INFO] Тесты завершены
+2025-05-12 01:23:00,875 [INFO] Тесты запускаются
+2025-05-12 01:23:07,200 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:23:21,051 [INFO] Закрыто всплывающее окно после клика на 'total'
+2025-05-12 01:23:21,211 [INFO] Кнопка продолжения нажата
+2025-05-12 01:23:22,269 [INFO] Кнопка 'Без сдачи' нажата
+2025-05-12 01:23:24,982 [INFO] Тесты завершены
+2025-05-12 01:25:58,395 [INFO] Тесты запускаются
+2025-05-12 01:26:04,703 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:26:21,355 [INFO] сообщение об ошибке ЛМ ЧЗ не появилось 
+2025-05-12 01:26:21,973 [INFO] Кнопка продолжения нажата
+2025-05-12 01:26:53,137 [INFO] Тесты завершены
+2025-05-12 01:27:29,827 [INFO] Тесты запускаются
+2025-05-12 01:27:36,109 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:27:50,458 [INFO] Закрыто сообщение об ошибке ЛМ ЧЗ
+2025-05-12 01:27:51,275 [INFO] Кнопка продолжения нажата
+2025-05-12 01:27:52,601 [INFO] Кнопка 'Без сдачи' нажата
+2025-05-12 01:27:54,359 [INFO] Тесты завершены
+2025-05-12 01:33:31,780 [INFO] Тесты запускаются
+2025-05-12 01:33:38,092 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:33:51,073 [INFO] Закрыто сообщение об ошибке ЛМ ЧЗ
+2025-05-12 01:33:52,013 [INFO] Кнопка продолжения нажата
+2025-05-12 01:33:52,731 [INFO] Кнопка 'Без сдачи' нажата
+2025-05-12 01:33:54,993 [INFO] Тесты завершены
+2025-05-12 01:34:39,904 [INFO] Тесты запускаются
+2025-05-12 01:34:46,269 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:35:00,172 [INFO] Закрыто сообщение об ошибке ЛМ ЧЗ
+2025-05-12 01:35:00,308 [INFO] Кнопка продолжения нажата
+2025-05-12 01:35:02,317 [INFO] Кнопка 'Без сдачи' нажата
+2025-05-12 01:35:04,085 [INFO] Тесты завершены
+2025-05-12 01:40:23,296 [INFO] Тесты запускаются
+2025-05-12 01:40:33,457 [INFO] Сообщение об ошибке: [ОШИБКА]: ЛМ ЧЗ. Локальный модуль не инициализирован. Перезапустите приложение
+2025-05-12 01:40:33,660 [INFO] Закрыто сообщение об ошибке ЛМ ЧЗ
+2025-05-12 01:40:34,564 [INFO] Кнопка продолжения нажата
+2025-05-12 01:40:35,567 [INFO] Кнопка 'Без сдачи' нажата
+2025-05-12 01:40:38,293 [INFO] Тесты завершены
+2025-05-12 01:41:16,684 [INFO] Тесты запускаются
+2025-05-12 01:41:34,818 [INFO] сообщение об ошибке ЛМ ЧЗ не появилось 
+2025-05-12 01:41:34,991 [INFO] Кнопка продолжения нажата
+2025-05-12 01:41:36,049 [INFO] Кнопка 'Без сдачи' нажата
+2025-05-12 01:41:38,752 [INFO] Тесты завершены
+2025-05-12 01:44:19,701 [INFO] Тесты запускаются
+2025-05-12 01:44:32,711 [INFO] сообщение об ошибке ЛМ ЧЗ не появилось 
+2025-05-12 01:44:32,868 [INFO] Кнопка продолжения нажата
+2025-05-12 01:44:53,525 [INFO] Тесты завершены
+2025-05-12 01:46:59,377 [INFO] Тесты запускаются
+2025-05-12 01:47:12,909 [INFO] сообщение об ошибке ЛМ ЧЗ не появилось 
+2025-05-12 01:47:13,683 [INFO] Кнопка продолжения нажата
+2025-05-12 01:47:34,284 [INFO] Тесты завершены
+2025-05-12 01:48:27,343 [INFO] Тесты запускаются
+2025-05-12 01:48:31,743 [INFO] Тесты завершены
+2025-05-12 01:52:13,912 [INFO] Тесты запускаются
+2025-05-12 01:52:27,498 [INFO] Тесты завершены
+2025-05-12 01:52:51,496 [INFO] Тесты запускаются
+2025-05-12 01:53:05,581 [INFO] кнопка Удалить неактивна
+2025-05-12 01:53:05,711 [INFO] Тесты завершены
+2025-05-12 01:59:23,797 [INFO] Тесты запускаются
+2025-05-12 01:59:30,558 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-05-12 01:59:44,195 [INFO] Сообщение об ошибке: [ОШИБКА]: ЛМ ЧЗ. Локальный модуль не инициализирован. Перезапустите приложение
+2025-05-12 01:59:44,407 [INFO] Закрыто сообщение об ошибке ЛМ ЧЗ
+2025-05-12 01:59:45,357 [INFO] Кнопка продолжения нажата
+2025-05-12 01:59:46,363 [INFO] Кнопка 'Без сдачи' нажата
+2025-05-12 01:59:49,082 [INFO] Тесты завершены
+2025-08-27 15:21:27,053 [INFO] Тесты запускаются
+2025-08-27 15:21:55,233 [INFO] Тесты завершены
+2025-08-27 15:33:47,136 [INFO] Тесты запускаются
+2025-08-27 15:33:50,376 [INFO] Тесты завершены
+2025-08-27 15:34:32,967 [INFO] Тесты запускаются
+2025-08-27 15:34:35,985 [INFO] Тесты завершены
+2025-08-27 15:38:10,196 [INFO] Тесты запускаются
+2025-08-27 15:40:15,391 [INFO] Тесты запускаются
+2025-08-27 15:41:58,693 [INFO] Кнопка permission_allow_button не найдена. Продолжаем выполнение теста.
+2025-08-27 15:42:23,418 [INFO] Время загрузки торгового объекта: 4 секунд
+2025-08-27 15:42:23,419 [INFO] Экран подключения эмулятора и терминала присутствуют
+2025-08-27 15:42:23,602 [INFO] Тесты завершены
+2025-08-27 15:42:44,046 [INFO] Тесты запускаются
+2025-08-27 15:42:47,049 [INFO] Тесты завершены
+2025-08-27 15:46:24,021 [INFO] Тесты запускаются
+2025-08-27 15:46:27,045 [INFO] Тесты завершены
+2025-08-27 15:47:55,492 [INFO] Тесты запускаются
+2025-08-27 15:47:58,569 [INFO] Тесты завершены
+2025-08-27 15:49:13,967 [INFO] tests start
+2025-08-27 15:49:23,934 [INFO] Кнопка permission_allow_button не найдена. Продолжаем выполнение теста.
+2025-08-27 15:49:41,354 [INFO] Время загрузки торгового объекта: 3 секунд
+2025-08-27 15:49:41,354 [INFO] Экран подключения эмулятора и терминала присутствуют
+2025-08-27 15:49:41,539 [INFO] tests end
+2025-09-09 21:02:28,154 [INFO] tests start
+2025-09-09 21:02:37,126 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 21:03:07,948 [INFO] Сообщение об ошибке ЛМ ЧЗ не появилось
+2025-09-09 21:03:08,800 [INFO] Кнопка продолжения нажата
+2025-09-09 21:03:10,286 [INFO] tests end
+2025-09-09 21:03:30,391 [INFO] tests start
+2025-09-09 21:04:04,799 [INFO] tests end
+2025-09-09 21:10:22,754 [INFO] tests start
+2025-09-09 21:10:30,508 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 21:10:46,736 [INFO] tests end
+2025-09-09 21:11:23,059 [INFO] tests start
+2025-09-09 21:11:30,769 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 21:11:47,149 [INFO] Сообщение об ошибке ЛМ ЧЗ не появилось
+2025-09-09 21:11:55,221 [INFO] Окна проверки ЧЗ нет: Message: 
+
+2025-09-09 21:12:01,163 [INFO] tests end
+2025-09-09 21:38:20,908 [INFO] tests start
+2025-09-09 21:38:28,663 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 21:38:36,219 [INFO] Сообщение об ошибке: [ОШИБКА]: Касса. Подключение к кассе отсутствует
+2025-09-09 21:38:37,197 [INFO] Закрыто сообщение об ошибке ЛМ ЧЗ
+2025-09-09 21:38:37,385 [INFO] Кнопка продолжения нажата
+2025-09-09 21:38:48,012 [INFO] Сообщение об ошибке: [ОШИБКА]: Касса. Подключение к кассе отсутствует
+2025-09-09 21:38:58,583 [INFO] tests end
+2025-09-09 22:43:33,898 [INFO] tests start
+2025-09-09 22:43:38,101 [INFO] tests end
+2025-09-09 22:44:57,195 [INFO] tests start
+2025-09-09 22:45:00,256 [INFO] tests end
+2025-09-09 22:50:44,706 [INFO] tests start
+2025-09-09 22:50:47,818 [INFO] tests end
+2025-09-09 22:57:48,786 [INFO] tests start
+2025-09-09 22:58:07,282 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 22:58:07,613 [INFO] tests end
+2025-09-09 22:59:59,877 [INFO] tests start
+2025-09-09 23:00:06,494 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 23:00:06,833 [INFO] tests end
+2025-09-09 23:08:51,764 [INFO] tests start
+2025-09-09 23:08:57,750 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 23:08:58,092 [INFO] tests end
+2025-09-09 23:11:17,295 [INFO] tests start
+2025-09-09 23:11:23,533 [INFO] tests end
+2025-09-09 23:11:40,401 [INFO] tests start
+2025-09-09 23:11:46,448 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 23:11:46,779 [INFO] tests end
+2025-09-09 23:16:31,674 [INFO] tests start
+2025-09-09 23:16:37,775 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 23:16:38,015 [INFO] tests end
+2025-09-09 23:17:54,416 [INFO] tests start
+2025-09-09 23:17:57,511 [INFO] tests end
+2025-09-09 23:22:42,179 [INFO] tests start
+2025-09-09 23:22:45,366 [INFO] tests end
+2025-09-09 23:25:23,424 [INFO] tests start
+2025-09-09 23:25:26,661 [INFO] tests end
+2025-09-09 23:30:53,329 [INFO] tests start
+2025-09-09 23:30:56,422 [INFO] tests end
+2025-09-09 23:32:27,958 [INFO] tests start
+2025-09-09 23:32:31,146 [INFO] tests end
+2025-09-09 23:33:05,788 [INFO] tests start
+2025-09-09 23:33:08,990 [INFO] tests end
+2025-09-09 23:35:22,834 [INFO] tests start
+2025-09-09 23:35:26,029 [INFO] tests end
+2025-09-09 23:37:56,425 [INFO] tests start
+2025-09-09 23:38:04,690 [INFO] tests end
+2025-09-09 23:38:46,996 [INFO] tests start
+2025-09-09 23:38:52,029 [INFO] Элемент 'search_close'  не найден, продолжаем выполнение теста.
+2025-09-09 23:38:58,910 [INFO] Сообщение об ошибке: [ОШИБКА]: Касса. Подключение к кассе отсутствует
+2025-09-09 23:38:59,908 [INFO] Закрыто сообщение об ошибке ЛМ ЧЗ
+2025-09-09 23:39:00,034 [INFO] Кнопка продолжения нажата
+2025-09-09 23:39:15,285 [INFO] [ОШИБКА]: Касса. Подключение к кассе отсутствует
+2025-09-09 23:39:15,411 [INFO] tests end
