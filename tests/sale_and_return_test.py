@@ -10,6 +10,7 @@ from driver_helper import WebDriverHelper
 from pages.search_goods import SearchGoods
 from pages.loyality import LoyaltyPage
 from pages.pay import PayPage
+from pages.sale_screen import SaleScreen
 
 
 def test_sale_and_return(driver_setup):
@@ -18,6 +19,8 @@ def test_sale_and_return(driver_setup):
     search_goods = SearchGoods(webdriver_helper)
     loyalty = LoyaltyPage(webdriver_helper)
     pay_page = PayPage(webdriver_helper)
+    sale_screen = SaleScreen(driver)
+    sale_screen.close_banner()
     search_goods.search_product("АГЕНТ")
     search_goods.search_features("ХАРАКТЕРИСТИКИ")
     loyalty.perform_loyalty_actions()
@@ -55,6 +58,7 @@ def test_sale_and_return(driver_setup):
 
     sale_return = driver.find_element(AppiumBy.XPATH, "//android.widget.TextView[@text='Возврат прихода']")
     sale_return.click()
+    sale_screen.close_banner()
     search_goods.search_product("БАНКОВСКИЙ АГЕНТ")
     done = webdriver_helper.wait_present((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/fab_done'))
     done.click()

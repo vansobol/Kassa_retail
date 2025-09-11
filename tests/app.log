@@ -1,7 +1,2 @@
-INFO     root:conftest.py:51 tests start
-INFO     root:add_mark_good.py:25 Элемент 'search_close'  не найден, продолжаем выполнение теста.
-INFO     root:add_mark_good.py:38 Сообщение об ошибке: [ОШИБКА]: Касса. Подключение к кассе отсутствует
-INFO     root:add_mark_good.py:43 Закрыто сообщение об ошибке ЛМ ЧЗ
-INFO     root:add_mark_good.py:52 Кнопка продолжения нажата
-INFO     root:pay.py:38 [ОШИБКА]: Касса. Подключение к кассе отсутствует
-INFO     root:conftest.py:53 tests end
+INFO     root:conftest.py:62 старт
+INFO     root:conftest.py:64 конец

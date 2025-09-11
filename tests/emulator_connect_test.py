@@ -5,11 +5,11 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import TimeoutException
 import time
 import logging
-from pages.add_kkt import add_kkt
-@pytest.mark.parametrize("driver_setup", ["ZY22DVMDXJ"], indirect=True)
+from pages.add_kkt import addKkt
+# @pytest.mark.parametrize("driver_setup", ["ZY22DVMDXJ"], indirect=True)
 def test_emulator(driver_setup):
     driver, udid = driver_setup
-    add_kkt_page = add_kkt(driver)
+    add_kkt_page = addKkt(driver)
     add_kkt_page.add_kkt()
 
     button_next = add_kkt_page.helper.short_wait_present((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/button_next'))

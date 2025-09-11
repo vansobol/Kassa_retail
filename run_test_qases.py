@@ -3,10 +3,10 @@ import subprocess
 # Список тестов для запуска
 tests = [
     "tests/authorization_test.py",
-    "tests/emulator_connect_test.py"
+    "tests/emulator_connect_test.py",
+     "tests/markirovka_test.py",
     "tests/sale_and_return_test.py",
     "tests/correction.py",
-    "tests/markirovka_test.py",
     "tests/reauthorization_test.py"
 ]
 

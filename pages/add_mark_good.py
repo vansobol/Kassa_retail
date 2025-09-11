@@ -1,4 +1,4 @@
-import logging
+import time
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from appium.webdriver.common.appiumby import AppiumBy
@@ -38,38 +38,44 @@ class AddMarkGood:
             logging.info(f"Сообщение об ошибке: {text}")
 
             # Закрытие всплывающего сообщения
-            close_button = self.webdriver_helper.wait_clickable((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/closeBtn'))
+            close_button = self.webdriver_helper.middle_wait_clickable((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/closeBtn'))
             close_button.click()
             logging.info("Закрыто сообщение об ошибке ЛМ ЧЗ")
         except (TimeoutException, NoSuchElementException):
             logging.info("Сообщение об ошибке ЛМ ЧЗ не появилось")
 
-        # Продолжение выполнения кода
         try:
-            # Кнопка продолжения
-            oism_button = self.webdriver_helper.middle_wait_present((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/button_continue'))
+            # Кнопка "Продолжить"
+            oism_button = self.webdriver_helper.middle_wait_present((AppiumBy.XPATH,'//android.widget.Button[@resource-id="com.bifit.cashdesk.mobile:id/button_continue" and @text="Далее"]'))
             oism_button.click()
-            logging.info("Кнопка продолжения нажата")
-        except (StaleElementReferenceException, TimeoutException, NoSuchElementException) as e:
-            logging.info(f"Окна проверки ЧЗ нет: {e}")
+            logging.info("Кнопка Продолжить нажата")
 
+        except (StaleElementReferenceException, TimeoutException, NoSuchElementException):
+            # Пробуем найти "Удалить невалидные"
             try:
-                # Попытка нажать кнопку "Удалить невалидные"
                 oism_button2 = self.webdriver_helper.middle_wait_present((AppiumBy.XPATH, '//android.widget.Button[@resource-id="com.bifit.cashdesk.mobile:id/button_continue" and @text="Удалить невалидные"]'))
                 oism_button2.click()
-                logging.info("Кнопка 'Удалить невалидные' нажата")
+                logging.info("Есть невалидные марки,нажата кнопка Удалить невалидные")
+                time.sleep(1)
 
-                # Ввод данных
-                input_field = self.webdriver_helper.middle_wait_present((AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().resourceId("com.bifit.cashdesk.mobile:id/edit_text_mark")'))
-                input_field.send_keys("04601653035829H;dV)bFACVUdGVz")
-                logging.info("Введены данные в поле марки")
+                input_field = self.webdriver_helper.middle_wait_present((AppiumBy.ANDROID_UIAUTOMATOR,'new UiSelector().resourceId("com.bifit.cashdesk.mobile:id/edit_text_mark")'))
+                mark = "04601653035829H;dV)bFACVUdGVz"
+                input_field.send_keys(mark)
+                ActionChains(self.driver).send_keys(mark).send_keys(Keys.ENTER).perform()
+
 
                 try:
-                    # Попытка нажать кнопку удаления марки
-                    delete_mark = self.webdriver_helper.wait_clickable((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/button_delete'))
+                    # Попытка удалить марку
+                    delete_mark = self.webdriver_helper.wait_clickable((AppiumBy.ID,"com.bifit.cashdesk.mobile:id/button_delete" ))
                     delete_mark.click()
                     logging.info("Кнопка удаления марки нажата")
                 except (TimeoutException, NoSuchElementException):
-                    logging.info("Удаление невалидных данных: кнопка неактивна")
-            except StaleElementReferenceException as e:
-                logging.info(f"Кнопка удаления невалидных данных не найдена: {e}")
+                    logging.info("Удаление невалидных данных: кнопка удаления неактивна")
+
+            except (StaleElementReferenceException, TimeoutException, NoSuchElementException):
+                # Проверяем, перешли ли сразу на страницу оплаты
+                try:
+                    self.webdriver_helper.short_wait_present((AppiumBy.XPATH, "//android.widget.Button[@text='Без сдачи']"))
+                    logging.info("Окна проверки ЧЗ отсутствует")
+                except TimeoutException:
+                    logging.warning("Не удалось определить состояние")

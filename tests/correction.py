@@ -7,11 +7,13 @@ from selenium.common.exceptions import StaleElementReferenceException, TimeoutEx
 import time
 import logging
 from pages.pay import PayPage
+from pages.sale_screen import SaleScreen
 
 def test_correction(driver_setup):
     driver, udid = driver_setup
     webdriver_helper = WebDriverHelper(driver)
     pay_page = PayPage(webdriver_helper)
+    sale_screen = SaleScreen(driver)
     try:
         side_menu = webdriver_helper.wait_visible((AppiumBy.XPATH, "//android.view.ViewGroup/android.widget.ImageButton"))
         side_menu.click()
@@ -19,8 +21,7 @@ def test_correction(driver_setup):
         side_menu = webdriver_helper.wait_visible((AppiumBy.XPATH, "//android.view.ViewGroup/android.widget.ImageButton"))
         side_menu.click()
     try:
-        error = WebDriverWait(driver, 2).until(
-            EC.presence_of_element_located((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/textView1')))
+        error = webdriver_helper.short_wait_present((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/textView1'))
         text = error.text
         logging.info(text)
     except TimeoutException:
@@ -29,9 +30,10 @@ def test_correction(driver_setup):
     correction = driver.find_element(AppiumBy.XPATH, "//android.widget.TextView[@text='Коррекция']")
     correction.click()
     time.sleep(1)
+    sale_screen.close_banner()
     correction_sale = webdriver_helper.wait_visible((AppiumBy.XPATH, '(//android.widget.TextView[@resource-id="com.bifit.cashdesk.mobile:id/material_drawer_name"])[9]'))
     correction_sale.click()
-
+    sale_screen.close_banner()
     add_receipt_items = webdriver_helper.wait_visible((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/button_add_receipt_item'))
     add_receipt_items.click()
     time.sleep(2)

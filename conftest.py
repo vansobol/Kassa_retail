@@ -8,6 +8,7 @@ from selenium.common.exceptions import NoSuchElementException, InvalidElementSta
 from appium.options.android import UiAutomator2Options
 import subprocess
 import logging
+import sys
 
 appActivity = {
 
@@ -34,23 +35,33 @@ def driver_setup(request):
     yield driver, udid
     driver.quit()
 
-def pytest_configure():
-
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s [%(levelname)s] %(message)s',
-        handlers=[
-            logging.StreamHandler(),  # Вывод в консоль
-            logging.FileHandler("test_logs.log", mode='a',encoding='utf-8')  # Запись в файл
-        ]
-    )
+class Utf8SafeStreamHandler(logging.StreamHandler):
+    """Пишет в консоль UTF-8, обрабатывая UnicodeEncodeError на Windows"""
+    def emit(self, record):
+        try:
+            super().emit(record)
+        except UnicodeEncodeError:
+            msg = self.format(record)
+            # Пишем напрямую в stdout в байтах
+            sys.stdout.buffer.write(msg.encode('utf-8') + b'\n')
+            self.flush()
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_logging():
-    # Этот фикстур выполняется для всех тестов и настраивает логирование
-    logging.info("tests start")
+    console_handler = Utf8SafeStreamHandler(sys.stdout)
+    console_handler.setLevel(logging.INFO)
+    console_handler.setFormatter(logging.Formatter('%(asctime)s [%(levelname)s] %(message)s'))
+
+    file_handler = logging.FileHandler("test_logs.log", mode='a', encoding='utf-8')
+
+    logging.basicConfig(
+        level=logging.INFO,
+        handlers=[console_handler, file_handler]
+    )
+
+    logging.info("старт")
     yield
-    logging.info("tests end")
+    logging.info("конец")
 
 
 # @pytest.fixture()
@@ -91,7 +102,7 @@ def setup_before_test(driver_setup):
         kassa = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Касса')
         kassa.click()
     except Exception as e:
-        print("An error occurred:", str(e))
+        print("Error:", str(e))
 
     account = wait.until(EC.presence_of_element_located((AppiumBy.XPATH, '//android.view.ViewGroup/android.widget.LinearLayout')))
     account.click()

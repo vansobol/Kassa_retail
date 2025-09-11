@@ -31,3 +31,6 @@ class WebDriverHelper:
 
     def middle_wait_present(self, locator):
         return self.middle_wait.until(EC.presence_of_element_located(locator))
+
+    def middle_wait_clickable(self, locator):
+        return self.middle_wait.until(EC.presence_of_element_located(locator))

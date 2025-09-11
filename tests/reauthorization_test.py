@@ -4,11 +4,14 @@ import time
 from driver_helper import WebDriverHelper
 from selenium.common.exceptions import TimeoutException
 from pages.authorization import Authorization
+from pages.sale_screen import SaleScreen
 
 
 def test_reauthorization(driver_setup):
     driver, udid = driver_setup
     webdriver_helper = WebDriverHelper(driver)
+    sale_screen = SaleScreen(driver)
+    sale_screen.close_banner()
     side_menu = webdriver_helper.short_wait_present((AppiumBy.XPATH, "//android.view.ViewGroup/android.widget.ImageButton"))
     side_menu.click()
     time.sleep(1)

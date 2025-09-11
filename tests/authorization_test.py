@@ -2,6 +2,7 @@ import time
 import subprocess
 import pytest
 from pages.authorization import Authorization
+from pages.sale_screen import SaleScreen
 
 def test_authorization_android(driver_setup):
 
@@ -11,7 +12,11 @@ def test_authorization_android(driver_setup):
     subprocess.run(['adb', '-s', udid, 'shell', 'am', 'start','com.bifit.cashdesk.mobile/com.bifit.cashdesk.mobile.StartActivity'])
     time.sleep(1)
     auth = Authorization(driver)
+    sale_screen = SaleScreen(driver)
     auth.allow_permissions()
     auth.login(username='demo@demo', password='1234qwer')
     auth.click_access_code()
     auth.select_organization_and_object()
+    time.sleep(2)
+    sale_screen.swipe_up()
+    sale_screen.close_banner()

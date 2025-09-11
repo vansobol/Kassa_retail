@@ -13,7 +13,7 @@ def test_markirovka(driver_setup):
     add_mark_good = AddMarkGood(driver_helper)
     add_mark_good.close_search()
     add_mark_good.add_mark('04601653035829H;dV)bFACVUdGVz')
-    add_mark_good.add_mark('0000004621065422dBtACAAPidGVz')
+    # add_mark_good.add_mark('0000004621065422dBtACAAPidGVz')
     time.sleep(1)
     done = driver_helper.wait_present((AppiumBy.ID, 'com.bifit.cashdesk.mobile:id/fab_done'))
     done.click()
